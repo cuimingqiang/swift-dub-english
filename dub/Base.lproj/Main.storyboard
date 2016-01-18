@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mr6-NN-9Vg">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--广告-->
+        <scene sceneID="DIk-Gl-hYL">
+            <objects>
+                <viewController id="mr6-NN-9Vg" userLabel="广告" customClass="Adcontroller" customModule="dub" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ms2-MH-TDK"/>
+                        <viewControllerLayoutGuide type="bottom" id="vOk-s2-qwV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PzM-zl-Uwq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cFf-fp-AHx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1791" y="1340"/>
+        </scene>
+        <!--登陆-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="LoginController" id="BYZ-38-t0r" userLabel="登陆" customClass="LoginController" customModule="dub" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1107" y="1340"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="Zlm-W4-moq">
+            <objects>
+                <viewController title="首页" id="mJM-NU-k6V" customClass="DubController" customModule="dub" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sal-D8-pA3"/>
+                        <viewControllerLayoutGuide type="bottom" id="IYh-KB-3n3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="syS-hk-fax">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="配音" image="tab_home" selectedImage="tab_home_sel" id="6vc-fj-FMg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wmm-wp-WiO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="641" y="388"/>
+        </scene>
+        <!--小组-->
+        <scene sceneID="8Yc-rq-mrT">
+            <objects>
+                <viewController title="小组" id="MC0-Kz-V3h" customClass="GroupController" customModule="dub" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CAx-bv-4lK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Whs-Jz-CWv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="znP-UW-djl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="小组" image="tab_group" selectedImage="tab_group_sel" id="ub0-Yg-kkf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7xe-B8-Ysw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636" y="1058"/>
+        </scene>
+        <!--主页-->
+        <scene sceneID="An3-9d-oTz">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabController" id="hOG-jg-Eql" userLabel="主页" customClass="MainTabController" customModule="dub" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="hqY-4c-7rp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="tab" destination="hqY-4c-7rp" id="UIh-ml-qa8"/>
+                        <segue destination="mJM-NU-k6V" kind="relationship" relationship="viewControllers" id="QKF-YM-2Wx"/>
+                        <segue destination="MC0-Kz-V3h" kind="relationship" relationship="viewControllers" id="bXf-9g-Vmb"/>
+                        <segue destination="CJs-12-zsv" kind="relationship" relationship="viewControllers" id="0Xe-n3-W98"/>
+                        <segue destination="5Gn-u3-nwL" kind="relationship" relationship="viewControllers" id="1NT-6w-OPq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wKl-Sf-ztP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-388" y="1347"/>
+        </scene>
+        <!--榜单-->
+        <scene sceneID="RKO-Xb-r0b">
+            <objects>
+                <viewController title="榜单" id="CJs-12-zsv" customClass="TopController" customModule="dub" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Sm-Iv-GsQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="geJ-d5-8jd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jps-kD-u15">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="榜单" image="tab_toplist" selectedImage="tab_toplist_sel" id="4Nb-2F-oof"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qgB-Hu-VFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636" y="1721"/>
+        </scene>
+        <!--我-->
+        <scene sceneID="rf6-Ue-1rT">
+            <objects>
+                <viewController title="我" id="5Gn-u3-nwL" customClass="MeController" customModule="dub" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c9l-6h-Cm3"/>
+                        <viewControllerLayoutGuide type="bottom" id="h6O-fW-5mJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Vr-Sa-CWE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="我" image="tab_my" selectedImage="tab_my_sel" id="EtY-VK-8el"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UVz-Ms-PLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636" y="2394"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_group" width="25" height="25"/>
+        <image name="tab_group_sel" width="25" height="25"/>
+        <image name="tab_home" width="25" height="25"/>
+        <image name="tab_home_sel" width="25" height="25"/>
+        <image name="tab_my" width="25" height="25"/>
+        <image name="tab_my_sel" width="25" height="25"/>
+        <image name="tab_toplist" width="25" height="25"/>
+        <image name="tab_toplist_sel" width="25" height="25"/>
+    </resources>
+</document>
