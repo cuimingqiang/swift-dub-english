@@ -147,7 +147,7 @@ extension LoginController{
                     self.login.enabled = true
                 case let Event.Next(data):
                     print(data)
-                    //                RxBus.postEvent(data)
+                    RxBus.postEvent(data)
                     self.gotoMain()
                     return
                 case let Event.Error(e):

@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import SnapKit
+import Kingfisher
 class MeController:UIViewController{
     lazy var navigation = UINavigationBar.init()
     lazy var tableView = UITableView.init(frame: CGRect.init(), style: UITableViewStyle.Grouped)
@@ -22,7 +23,7 @@ class MeController:UIViewController{
     }
     
     private func initData(){
-        data.append(Item.init(image: "", title: "个人信息"))
+        data.append(Item.init(image: "default_avatar", title: "个人信息"))
         section.append(1)
         data.append(Item.init(image: "", title: "新功能"))
         section.append(1)
@@ -78,23 +79,24 @@ extension MeController : UITableViewDataSource{
         return self.section[section]
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if indexPath.section == 0 {
-            return initHeader()
-        }
         var row = 0
         for var i = 0 ; i < indexPath.section ; i++ {
             row += section[i]
         }
         let item = data[indexPath.row + row]
+        if indexPath.section == 0 {
+            return initHeader(item as! Item)
+        }
         return initCommonItem(item as! Item)
     }
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return section.count
     }
-    func initHeader() -> UITableViewCell{
+    func initHeader(item:Item) -> UITableViewCell{
         let cell = UITableViewCell.init()
         let photo = UIImageView.init()
         photo.layer.cornerRadius = 28
+        photo.image = UIImage.init(named: item.image)
         cell.addSubview(photo)
         photo.snp_makeConstraints {
             $0.width.height.equalTo(55)
@@ -102,7 +104,7 @@ extension MeController : UITableViewDataSource{
             $0.left.equalTo(15)
         }
         let name = UILabel.init()
-        name.text = "肖秋娜"
+        name.text = item.title
         cell.addSubview(name)
         name.snp_makeConstraints {
             $0.left.equalTo(75)

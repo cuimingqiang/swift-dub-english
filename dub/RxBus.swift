@@ -10,14 +10,12 @@ import Foundation
 import RxSwift
 
 final class RxBus {
-    private static let subject = PublishSubject<Any>.init()
-    
-    internal static func obtainEvent<E>() -> Observable<E>{
-        return subject.filter{ $0 is E}
-            .map{ $0 as! E}
+    private static let eventBus = PublishSubject<Any>.init()
+    internal class func obtainEvent<E>() -> Observable<E>{
+        return eventBus.filter{ $0 is E}.map{ $0 as! E}
+    }
+    internal class func postEvent( o:AnyObject){
+        eventBus.on(Event.Next(o))
     }
     
-    internal static func postEvent( o:AnyObject){
-        subject.on(Event.Next(o))
-    }
 }
