@@ -63,12 +63,13 @@ extension DubController{
     }
     func addRefresh(){
         refresh.addTarget(self, action: "refreshData", forControlEvents: UIControlEvents.ValueChanged)
-        refresh.attributedTitle = NSAttributedString(string: "松开后自动刷新")
+//        refresh.attributedTitle = NSAttributedString(string: "松开后自动刷新")
         tableView.addSubview(refresh)
-//        refresh.snp_makeConstraints {
-//            $0.top.equalTo(64)
-//            $0.width.equalTo(view)
-//        }
+        refresh.snp_makeConstraints {
+            $0.top.equalTo(view).offset(85)
+            $0.width.equalTo(view)
+           
+        }
 
     }
     func refreshData(){
