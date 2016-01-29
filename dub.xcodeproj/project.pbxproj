@@ -190,10 +190,6 @@
 		847630991C493DFF0072A3E3 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserInfo.swift; path = dub/UserInfo.swift; sourceTree = "<group>"; };
 		847630A71C4941150072A3E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		847630A91C4943C30072A3E3 /* MainTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
-		847B5A8E1C494CBF009E2FE6 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = "../Carthage/Checkouts/RxSwift/build/Debug-iphoneos/RxBlocking.framework"; sourceTree = "<group>"; };
-		847B5A901C494CC3009E2FE6 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = "../Carthage/Checkouts/RxSwift/build/Debug-iphoneos/RxCocoa.framework"; sourceTree = "<group>"; };
-		847B5A921C494CC7009E2FE6 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = "../Carthage/Checkouts/RxSwift/build/Debug-iphoneos/RxSwift.framework"; sourceTree = "<group>"; };
-		847B5A941C494CCD009E2FE6 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../Carthage/Checkouts/SwiftyJSON/build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		95AE4D815B3E8B4C19A750FA /* Pods_dub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -278,7 +274,6 @@
 			children = (
 				847630A11C493E1B0072A3E3 /* net */,
 				847630A01C493E0A0072A3E3 /* rxBus */,
-				847630931C493DAA0072A3E3 /* framework */,
 				8476305C1C493D380072A3E3 /* dub */,
 				847630711C493D380072A3E3 /* dubTests */,
 				8476307C1C493D380072A3E3 /* dubUITests */,
@@ -327,17 +322,6 @@
 				8476307F1C493D380072A3E3 /* Info.plist */,
 			);
 			path = dubUITests;
-			sourceTree = "<group>";
-		};
-		847630931C493DAA0072A3E3 /* framework */ = {
-			isa = PBXGroup;
-			children = (
-				847B5A941C494CCD009E2FE6 /* SwiftyJSON.framework */,
-				847B5A921C494CC7009E2FE6 /* RxSwift.framework */,
-				847B5A901C494CC3009E2FE6 /* RxCocoa.framework */,
-				847B5A8E1C494CBF009E2FE6 /* RxBlocking.framework */,
-			);
-			name = framework;
 			sourceTree = "<group>";
 		};
 		847630A01C493E0A0072A3E3 /* rxBus */ = {
