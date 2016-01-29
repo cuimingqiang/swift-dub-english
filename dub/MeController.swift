@@ -97,6 +97,7 @@ extension MeController : UITableViewDataSource{
         let photo = UIImageView.init()
         photo.layer.cornerRadius = 28
         photo.image = UIImage.init(named: item.image)
+        
         cell.addSubview(photo)
         photo.snp_makeConstraints {
             $0.width.height.equalTo(55)
