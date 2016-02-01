@@ -9,13 +9,16 @@
 import Foundation
 import UIKit
 import SnapKit
+import SDCycleScrollView
 class DubController : UIViewController{
     lazy var navigation = UINavigationBar.init()
     lazy var tableView = UITableView.init()
     lazy var refresh = UIRefreshControl.init()
+    lazy var section : [Int] = [1,9]
     override func viewDidLoad() {
         initNav()
         initTableView()
+
     }
 }
 extension DubController{
@@ -44,13 +47,13 @@ extension DubController{
 
 extension DubController{
     func initTableView(){
-//        tableView.dataSource = self
-//        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.delegate = self
         tableView.bounces = true
         tableView.alwaysBounceVertical = true
-        tableView.separatorStyle = UITableViewCellSeparatorStyle.SingleLine
-        tableView.separatorInset = UIEdgeInsetsMake(0, 55, 0, 0)
-        tableView.contentInset = UIEdgeInsetsMake(-35, 0, 0, 0)
+        tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+//        tableView.separatorInset = UIEdgeInsetsMake(0, 55, 0, 0)
+//        tableView.contentInset = UIEdgeInsetsMake(-35, 0, 0, 0)
         tableView.sectionFooterHeight = 5
         tableView.sectionHeaderHeight = 5
         view.addSubview(tableView)
@@ -65,17 +68,53 @@ extension DubController{
         refresh.addTarget(self, action: "refreshData", forControlEvents: UIControlEvents.ValueChanged)
 //        refresh.attributedTitle = NSAttributedString(string: "松开后自动刷新")
         tableView.addSubview(refresh)
-        refresh.snp_makeConstraints {
-            $0.top.equalTo(view).offset(85)
-            $0.width.equalTo(view)
-           
-        }
+//        refresh.snp_makeConstraints {
+//            $0.top.equalTo(view).offset(85)
+//            $0.width.equalTo(view)
+//           
+//        }
 
     }
     func refreshData(){
         refresh.endRefreshing()
     }
 }
-//extension DubController : UITableViewDataSource,UITableViewDelegate{
-//
-//}
+extension DubController : UITableViewDataSource,UITableViewDelegate {
+
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.section[section]
+    }
+
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell : AnyObject
+        switch indexPath.section{
+        case 0:
+            cell = createBanner()
+        default:
+            cell = UITableViewCell.init()
+        }
+        return cell as! UITableViewCell
+    }
+
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        switch indexPath.section{
+        case 0:
+            return 212
+        default:
+            return 44
+        }
+    }
+    func createBanner() -> UITableViewCell{
+        let cell = UITableViewCell.init()
+        
+        let bannerView = SDCycleScrollView.init(frame: CGRectMake(0, 64, UIScreen.mainScreen().bounds.width, 212))
+        bannerView.localizationImageNamesGroup = ["img_activity_head","img_activity_head","img_activity_head"]
+        bannerView.titlesGroup = ["我啦是大事","我啦是大事","我啦是大事"]
+       
+        view.addSubview(bannerView)
+        return cell
+    }
+}
+
+
+

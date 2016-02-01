@@ -10,4 +10,5 @@ target ‘dub’ do
     pod 'Alamofire', '~> 3.1.4'
     pod 'Kingfisher', '~> 1.8.5'
     pod 'SnapKit', '~> 0.15.0'
+    pod 'SDCycleScrollView','~> 1.6' #广告轮播图
 end

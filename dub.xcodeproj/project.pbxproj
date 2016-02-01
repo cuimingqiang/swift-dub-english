@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12A21B25731FF6E900A91191 /* Pods_dub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AE4D815B3E8B4C19A750FA /* Pods_dub.framework */; };
+		029266771C5C8E7D008C88D0 /* CBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029266761C5C8E7D008C88D0 /* CBannerView.swift */; };
+		029BFE591C5C886900635006 /* BBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029BFE581C5C886900635006 /* BBannerView.swift */; };
+		0EE4C0B0440D22ACB54EA759 /* Pods_dub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1424B05857A3443B049BD51 /* Pods_dub.framework */; };
 		84413FD81C4D03C5005AFE2A /* DubController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84413FD71C4D03C5005AFE2A /* DubController.swift */; };
 		84413FEA1C4D03F0005AFE2A /* GroupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84413FE91C4D03F0005AFE2A /* GroupController.swift */; };
 		84413FEC1C4D040B005AFE2A /* TopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84413FEB1C4D040B005AFE2A /* TopController.swift */; };
@@ -31,61 +33,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		846621A01C4A021100305237 /* PBXContainerItemProxy */ = {
+		028AB0391C5E04B300E73D4A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 846621951C4A021100305237 /* Pods.xcodeproj */;
+			containerPortal = 846621B01C4A021500305237 /* Pods.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = FE3249CF3F35396BA1021D3E40E6D162;
-			remoteInfo = Alamofire;
+			remoteGlobalIDString = D35062B2D38F1BFAF818B0D9A3BDC1AC;
+			remoteInfo = SDCycleScrollView;
 		};
-		846621A21C4A021100305237 /* PBXContainerItemProxy */ = {
+		028AB03B1C5E04B300E73D4A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 846621951C4A021100305237 /* Pods.xcodeproj */;
+			containerPortal = 846621B01C4A021500305237 /* Pods.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 725AF545610AC39C7DCAA015DEB0F795;
-			remoteInfo = Kingfisher;
-		};
-		846621A41C4A021100305237 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 846621951C4A021100305237 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 11959A62B88ED65E640A86EF1C5E2F60;
-			remoteInfo = "Pods-dub";
-		};
-		846621A61C4A021100305237 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 846621951C4A021100305237 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 890E9BC23A3214CAE1A6FBD8E9B870FE;
-			remoteInfo = RxBlocking;
-		};
-		846621A81C4A021100305237 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 846621951C4A021100305237 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 592158C9E89C1A0B2E90761431DFF458;
-			remoteInfo = RxCocoa;
-		};
-		846621AA1C4A021100305237 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 846621951C4A021100305237 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 72725038E5AB314A828D7B9D343806B1;
-			remoteInfo = RxSwift;
-		};
-		846621AC1C4A021100305237 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 846621951C4A021100305237 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7601FDDE9D46C50EA83EF321B95CFDD5;
-			remoteInfo = SnapKit;
-		};
-		846621AE1C4A021100305237 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 846621951C4A021100305237 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 97A07FF755E168325BC3607742FB1213;
-			remoteInfo = SwiftyJSON;
+			remoteGlobalIDString = BDD1BB95F6E1E910973C1DF81A2FBD12;
+			remoteInfo = SDWebImage;
 		};
 		846621BB1C4A021500305237 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -160,12 +120,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		028AB02B1C5E04B300E73D4A /* dub-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dub-Bridging-Header.h"; sourceTree = "<group>"; };
+		029266761C5C8E7D008C88D0 /* CBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBannerView.swift; sourceTree = "<group>"; };
+		029BFE581C5C886900635006 /* BBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBannerView.swift; sourceTree = "<group>"; };
 		384A207C2F8E9D264F24888B /* Pods-dub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dub/Pods-dub.debug.xcconfig"; sourceTree = "<group>"; };
 		476CC00CCD783870B9DE530D /* Pods-dub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dub.release.xcconfig"; path = "Pods/Target Support Files/Pods-dub/Pods-dub.release.xcconfig"; sourceTree = "<group>"; };
 		84413FD71C4D03C5005AFE2A /* DubController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DubController.swift; sourceTree = "<group>"; };
 		84413FE91C4D03F0005AFE2A /* GroupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupController.swift; sourceTree = "<group>"; };
 		84413FEB1C4D040B005AFE2A /* TopController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopController.swift; sourceTree = "<group>"; };
-		846621951C4A021100305237 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		846621B01C4A021500305237 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		846621CB1C4A086E00305237 /* AdController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdController.swift; sourceTree = "<group>"; };
 		84673EFB1C4A63EE00B2D9BF /* Schedulers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedulers.swift; sourceTree = "<group>"; };
@@ -190,7 +152,7 @@
 		847630991C493DFF0072A3E3 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserInfo.swift; path = dub/UserInfo.swift; sourceTree = "<group>"; };
 		847630A71C4941150072A3E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		847630A91C4943C30072A3E3 /* MainTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
-		95AE4D815B3E8B4C19A750FA /* Pods_dub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1424B05857A3443B049BD51 /* Pods_dub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,7 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12A21B25731FF6E900A91191 /* Pods_dub.framework in Frameworks */,
+				0EE4C0B0440D22ACB54EA759 /* Pods_dub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +181,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		021FD9C71C5C5729003742FE /* views */ = {
+			isa = PBXGroup;
+			children = (
+				029BFE581C5C886900635006 /* BBannerView.swift */,
+				029266761C5C8E7D008C88D0 /* CBannerView.swift */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
 		367C4E6D3202A2E8E25EC9F3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,21 +197,6 @@
 				476CC00CCD783870B9DE530D /* Pods-dub.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		846621961C4A021100305237 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				846621A11C4A021100305237 /* Alamofire.framework */,
-				846621A31C4A021100305237 /* Kingfisher.framework */,
-				846621A51C4A021100305237 /* Pods_dub.framework */,
-				846621A71C4A021100305237 /* RxBlocking.framework */,
-				846621A91C4A021100305237 /* RxCocoa.framework */,
-				846621AB1C4A021100305237 /* RxSwift.framework */,
-				846621AD1C4A021100305237 /* SnapKit.framework */,
-				846621AF1C4A021100305237 /* SwiftyJSON.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		846621B11C4A021500305237 /* Products */ = {
@@ -252,6 +208,8 @@
 				846621C21C4A021500305237 /* RxBlocking.framework */,
 				846621C41C4A021500305237 /* RxCocoa.framework */,
 				846621C61C4A021500305237 /* RxSwift.framework */,
+				028AB03A1C5E04B300E73D4A /* SDCycleScrollView.framework */,
+				028AB03C1C5E04B300E73D4A /* SDWebImage.framework */,
 				846621C81C4A021500305237 /* SnapKit.framework */,
 				846621CA1C4A021500305237 /* SwiftyJSON.framework */,
 			);
@@ -296,12 +254,14 @@
 		8476305C1C493D380072A3E3 /* dub */ = {
 			isa = PBXGroup;
 			children = (
+				021FD9C71C5C5729003742FE /* views */,
 				84673EFB1C4A63EE00B2D9BF /* Schedulers.swift */,
 				847630A71C4941150072A3E3 /* Assets.xcassets */,
 				847630A41C493E690072A3E3 /* controller */,
 				847630A31C493E4A0072A3E3 /* storyboard */,
 				8476305D1C493D380072A3E3 /* AppDelegate.swift */,
 				847630691C493D380072A3E3 /* Info.plist */,
+				028AB02B1C5E04B300E73D4A /* dub-Bridging-Header.h */,
 			);
 			path = dub;
 			sourceTree = "<group>";
@@ -376,8 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				846621B01C4A021500305237 /* Pods.xcodeproj */,
-				846621951C4A021100305237 /* Pods.xcodeproj */,
-				95AE4D815B3E8B4C19A750FA /* Pods_dub.framework */,
+				D1424B05857A3443B049BD51 /* Pods_dub.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -477,10 +436,6 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 846621961C4A021100305237 /* Products */;
-					ProjectRef = 846621951C4A021100305237 /* Pods.xcodeproj */;
-				},
-				{
 					ProductGroup = 846621B11C4A021500305237 /* Products */;
 					ProjectRef = 846621B01C4A021500305237 /* Pods.xcodeproj */;
 				},
@@ -495,60 +450,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		846621A11C4A021100305237 /* Alamofire.framework */ = {
+		028AB03A1C5E04B300E73D4A /* SDCycleScrollView.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = 846621A01C4A021100305237 /* PBXContainerItemProxy */;
+			path = SDCycleScrollView.framework;
+			remoteRef = 028AB0391C5E04B300E73D4A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		846621A31C4A021100305237 /* Kingfisher.framework */ = {
+		028AB03C1C5E04B300E73D4A /* SDWebImage.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = Kingfisher.framework;
-			remoteRef = 846621A21C4A021100305237 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		846621A51C4A021100305237 /* Pods_dub.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Pods_dub.framework;
-			remoteRef = 846621A41C4A021100305237 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		846621A71C4A021100305237 /* RxBlocking.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RxBlocking.framework;
-			remoteRef = 846621A61C4A021100305237 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		846621A91C4A021100305237 /* RxCocoa.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RxCocoa.framework;
-			remoteRef = 846621A81C4A021100305237 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		846621AB1C4A021100305237 /* RxSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RxSwift.framework;
-			remoteRef = 846621AA1C4A021100305237 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		846621AD1C4A021100305237 /* SnapKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SnapKit.framework;
-			remoteRef = 846621AC1C4A021100305237 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		846621AF1C4A021100305237 /* SwiftyJSON.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftyJSON.framework;
-			remoteRef = 846621AE1C4A021100305237 /* PBXContainerItemProxy */;
+			path = SDWebImage.framework;
+			remoteRef = 028AB03B1C5E04B300E73D4A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		846621BC1C4A021500305237 /* Alamofire.framework */ = {
@@ -689,6 +602,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				029266771C5C8E7D008C88D0 /* CBannerView.swift in Sources */,
 				8476309C1C493DFF0072A3E3 /* JsonToObject.swift in Sources */,
 				847630601C493D380072A3E3 /* LoginController.swift in Sources */,
 				8476309E1C493DFF0072A3E3 /* RxBus.swift in Sources */,
@@ -704,6 +618,7 @@
 				8476309A1C493DFF0072A3E3 /* API.swift in Sources */,
 				8476305E1C493D380072A3E3 /* AppDelegate.swift in Sources */,
 				84413FD81C4D03C5005AFE2A /* DubController.swift in Sources */,
+				029BFE591C5C886900635006 /* BBannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -846,12 +761,15 @@
 			baseConfigurationReference = 384A207C2F8E9D264F24888B /* Pods-dub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = dub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cmq.demo.dub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "dub/dub-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -860,12 +778,14 @@
 			baseConfigurationReference = 476CC00CCD783870B9DE530D /* Pods-dub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = dub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cmq.demo.dub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "dub/dub-Bridging-Header.h";
 			};
 			name = Release;
 		};
