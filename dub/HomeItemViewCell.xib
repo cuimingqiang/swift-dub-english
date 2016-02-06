@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="350" id="Zx8-wA-q0k" customClass="HomeItemViewCell" customModule="dub" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="410"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zx8-wA-q0k" id="BjT-Fz-yMG">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="409.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sRb-2Q-RR6" userLabel="header">
+                        <rect key="frame" x="10" y="10" width="580" height="30"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="home_btn_search" translatesAutoresizingMaskIntoConstraints="NO" id="PfE-Dr-I5B">
+                                <rect key="frame" x="0.0" y="4" width="22" height="22"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="高手秀场" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eD-dM-pim">
+                                <rect key="frame" x="30" y="4" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="top" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33V-Ku-ang">
+                                <rect key="frame" x="518" y="4" width="45" height="23.5"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                                <state key="normal" title="更多">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="home_more_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="DX9-TU-p1G">
+                                <rect key="frame" x="571" y="8" width="9" height="13"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="DX9-TU-p1G" firstAttribute="centerY" secondItem="sRb-2Q-RR6" secondAttribute="centerY" id="1lV-N2-GZ5"/>
+                            <constraint firstItem="33V-Ku-ang" firstAttribute="centerY" secondItem="sRb-2Q-RR6" secondAttribute="centerY" id="DUy-ob-ziE"/>
+                            <constraint firstItem="DX9-TU-p1G" firstAttribute="leading" secondItem="33V-Ku-ang" secondAttribute="trailing" constant="8" id="SYD-LD-dgm"/>
+                            <constraint firstItem="6eD-dM-pim" firstAttribute="centerY" secondItem="sRb-2Q-RR6" secondAttribute="centerY" id="Sd5-oE-C25"/>
+                            <constraint firstItem="PfE-Dr-I5B" firstAttribute="centerY" secondItem="sRb-2Q-RR6" secondAttribute="centerY" id="dYs-Wu-qeS"/>
+                            <constraint firstAttribute="trailing" secondItem="DX9-TU-p1G" secondAttribute="trailing" id="rxa-53-sll"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eus-Of-7Zw" userLabel="body">
+                        <rect key="frame" x="10" y="50" width="580" height="350"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="eus-Of-7Zw" secondAttribute="trailing" id="34p-SR-Wtk"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="sRb-2Q-RR6" secondAttribute="trailing" id="Ecp-2H-N9U"/>
+                    <constraint firstItem="eus-Of-7Zw" firstAttribute="leading" secondItem="BjT-Fz-yMG" secondAttribute="leadingMargin" id="Xt7-g6-wOz"/>
+                    <constraint firstItem="sRb-2Q-RR6" firstAttribute="leading" secondItem="BjT-Fz-yMG" secondAttribute="leadingMargin" id="YQT-Ii-yH0"/>
+                    <constraint firstItem="eus-Of-7Zw" firstAttribute="top" secondItem="sRb-2Q-RR6" secondAttribute="bottom" constant="10" id="bKI-Cb-3SD"/>
+                    <constraint firstItem="sRb-2Q-RR6" firstAttribute="centerX" secondItem="BjT-Fz-yMG" secondAttribute="centerX" id="zUv-mT-awN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="body" destination="eus-Of-7Zw" id="nri-Xi-QAf"/>
+            </connections>
+            <point key="canvasLocation" x="471" y="435"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="home_btn_search" width="22" height="22"/>
+        <image name="home_more_arrow" width="9" height="15"/>
+    </resources>
+</document>

@@ -42,6 +42,14 @@ extension DubController{
             $0.centerX.equalTo(view)
             $0.width.equalTo(view)
         }
+        let line = UIView.init()
+        line.backgroundColor = UIColor.grayColor()
+        navigation.addSubview(line)
+        line.snp_makeConstraints {
+            $0.width.equalTo(navigation)
+            $0.height.equalTo(0.5)
+            $0.bottom.equalTo(navigation)
+        }
     }
 }
 
@@ -56,6 +64,7 @@ extension DubController{
 //        tableView.contentInset = UIEdgeInsetsMake(-35, 0, 0, 0)
         tableView.sectionFooterHeight = 5
         tableView.sectionHeaderHeight = 5
+        
         view.addSubview(tableView)
         tableView.snp_makeConstraints {
             $0.top.equalTo(64)
@@ -86,32 +95,43 @@ extension DubController : UITableViewDataSource,UITableViewDelegate {
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell : AnyObject
+        var cell : UITableViewCell
         switch indexPath.section{
         case 0:
             cell = createBanner()
         default:
-            cell = UITableViewCell.init()
+            
+            cell = createItem()
         }
-        return cell as! UITableViewCell
+        print(indexPath.section)
+        return cell
     }
-
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return section.count
+    }
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         switch indexPath.section{
         case 0:
             return 212
         default:
-            return 44
+            return 400
         }
     }
     func createBanner() -> UITableViewCell{
         let cell = UITableViewCell.init()
-        
-        let bannerView = SDCycleScrollView.init(frame: CGRectMake(0, 64, UIScreen.mainScreen().bounds.width, 212))
+        let bannerView = SDCycleScrollView.init(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, 212))
         bannerView.localizationImageNamesGroup = ["img_activity_head","img_activity_head","img_activity_head"]
         bannerView.titlesGroup = ["我啦是大事","我啦是大事","我啦是大事"]
-       
-        view.addSubview(bannerView)
+        bannerView.pageControlAliment = SDCycleScrollViewPageContolAlimentRight
+        cell.addSubview(bannerView)
+//        bannerView.snp_makeConstraints {
+//            $0.width.height.equalTo(cell)
+//        }
+        return cell
+    }
+    func createItem() -> UITableViewCell{
+        let cell = UINib.init(nibName: "HomeItemViewCell", bundle: nil).instantiateWithOwner(self, options: nil)[0] as! HomeItemViewCell
+        cell.reLayout()
         return cell
     }
 }

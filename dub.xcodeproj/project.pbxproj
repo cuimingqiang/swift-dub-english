@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		029266771C5C8E7D008C88D0 /* CBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029266761C5C8E7D008C88D0 /* CBannerView.swift */; };
-		029BFE591C5C886900635006 /* BBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029BFE581C5C886900635006 /* BBannerView.swift */; };
 		0EE4C0B0440D22ACB54EA759 /* Pods_dub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1424B05857A3443B049BD51 /* Pods_dub.framework */; };
+		8409ACD61C605BC300A3E5C8 /* HomeItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409ACD51C605BC300A3E5C8 /* HomeItemViewCell.swift */; };
 		84413FD81C4D03C5005AFE2A /* DubController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84413FD71C4D03C5005AFE2A /* DubController.swift */; };
 		84413FEA1C4D03F0005AFE2A /* GroupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84413FE91C4D03F0005AFE2A /* GroupController.swift */; };
 		84413FEC1C4D040B005AFE2A /* TopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84413FEB1C4D040B005AFE2A /* TopController.swift */; };
@@ -30,6 +29,7 @@
 		8476309F1C493DFF0072A3E3 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847630991C493DFF0072A3E3 /* UserInfo.swift */; };
 		847630A81C4941150072A3E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847630A71C4941150072A3E3 /* Assets.xcassets */; };
 		847630AA1C4943C30072A3E3 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847630A91C4943C30072A3E3 /* MainTabController.swift */; };
+		848B35611C5F3149005E2FEB /* HomeItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848B35601C5F3149005E2FEB /* HomeItemViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,10 +121,9 @@
 
 /* Begin PBXFileReference section */
 		028AB02B1C5E04B300E73D4A /* dub-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dub-Bridging-Header.h"; sourceTree = "<group>"; };
-		029266761C5C8E7D008C88D0 /* CBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBannerView.swift; sourceTree = "<group>"; };
-		029BFE581C5C886900635006 /* BBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBannerView.swift; sourceTree = "<group>"; };
 		384A207C2F8E9D264F24888B /* Pods-dub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dub/Pods-dub.debug.xcconfig"; sourceTree = "<group>"; };
 		476CC00CCD783870B9DE530D /* Pods-dub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dub.release.xcconfig"; path = "Pods/Target Support Files/Pods-dub/Pods-dub.release.xcconfig"; sourceTree = "<group>"; };
+		8409ACD51C605BC300A3E5C8 /* HomeItemViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeItemViewCell.swift; sourceTree = "<group>"; };
 		84413FD71C4D03C5005AFE2A /* DubController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DubController.swift; sourceTree = "<group>"; };
 		84413FE91C4D03F0005AFE2A /* GroupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupController.swift; sourceTree = "<group>"; };
 		84413FEB1C4D040B005AFE2A /* TopController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopController.swift; sourceTree = "<group>"; };
@@ -152,6 +151,7 @@
 		847630991C493DFF0072A3E3 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserInfo.swift; path = dub/UserInfo.swift; sourceTree = "<group>"; };
 		847630A71C4941150072A3E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		847630A91C4943C30072A3E3 /* MainTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		848B35601C5F3149005E2FEB /* HomeItemViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeItemViewCell.xib; sourceTree = "<group>"; };
 		D1424B05857A3443B049BD51 /* Pods_dub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -184,8 +184,8 @@
 		021FD9C71C5C5729003742FE /* views */ = {
 			isa = PBXGroup;
 			children = (
-				029BFE581C5C886900635006 /* BBannerView.swift */,
-				029266761C5C8E7D008C88D0 /* CBannerView.swift */,
+				848B35601C5F3149005E2FEB /* HomeItemViewCell.xib */,
+				8409ACD51C605BC300A3E5C8 /* HomeItemViewCell.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -527,6 +527,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848B35611C5F3149005E2FEB /* HomeItemViewCell.xib in Resources */,
 				847630681C493D380072A3E3 /* LaunchScreen.storyboard in Resources */,
 				847630A81C4941150072A3E3 /* Assets.xcassets in Resources */,
 				847630631C493D380072A3E3 /* Main.storyboard in Resources */,
@@ -602,11 +603,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				029266771C5C8E7D008C88D0 /* CBannerView.swift in Sources */,
 				8476309C1C493DFF0072A3E3 /* JsonToObject.swift in Sources */,
 				847630601C493D380072A3E3 /* LoginController.swift in Sources */,
 				8476309E1C493DFF0072A3E3 /* RxBus.swift in Sources */,
 				84673F0F1C4A681800B2D9BF /* MeController.swift in Sources */,
+				8409ACD61C605BC300A3E5C8 /* HomeItemViewCell.swift in Sources */,
 				8476309D1C493DFF0072A3E3 /* RequestError.swift in Sources */,
 				846621CC1C4A086E00305237 /* AdController.swift in Sources */,
 				84413FEC1C4D040B005AFE2A /* TopController.swift in Sources */,
@@ -618,7 +619,6 @@
 				8476309A1C493DFF0072A3E3 /* API.swift in Sources */,
 				8476305E1C493D380072A3E3 /* AppDelegate.swift in Sources */,
 				84413FD81C4D03C5005AFE2A /* DubController.swift in Sources */,
-				029BFE591C5C886900635006 /* BBannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

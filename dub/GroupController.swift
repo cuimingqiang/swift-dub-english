@@ -10,4 +10,7 @@ import Foundation
 import UIKit
 class GroupController:UIViewController{
 
+    override func viewDidLoad() {
+        
+    }
 }
