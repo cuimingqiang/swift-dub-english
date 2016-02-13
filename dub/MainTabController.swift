@@ -13,6 +13,6 @@ class MainTabController: UITabBarController{
     @IBOutlet weak var tab: UITabBar!
     
     override func viewDidLoad() {
-        tab.tintColor = UIColor.init(red: 0x2b/0xff, green: 0xc3/0xff, blue: 0x29/0xff, alpha: 1.0)
+        tab.tintColor = ColorConstant.GREEN
     }
 }
