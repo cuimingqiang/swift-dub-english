@@ -31,6 +31,7 @@
 		847630AA1C4943C30072A3E3 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847630A91C4943C30072A3E3 /* MainTabController.swift */; };
 		848B35611C5F3149005E2FEB /* HomeItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848B35601C5F3149005E2FEB /* HomeItemViewCell.xib */; };
 		84E7884A1C6F047C00D7EE8B /* ColorConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E788491C6F047C00D7EE8B /* ColorConstant.swift */; };
+		84EDB6521C70AFF3008FFBDA /* LookGroupPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EDB6511C70AFF3008FFBDA /* LookGroupPart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +162,7 @@
 		847630A91C4943C30072A3E3 /* MainTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		848B35601C5F3149005E2FEB /* HomeItemViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeItemViewCell.xib; sourceTree = "<group>"; };
 		84E788491C6F047C00D7EE8B /* ColorConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorConstant.swift; sourceTree = "<group>"; };
+		84EDB6511C70AFF3008FFBDA /* LookGroupPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookGroupPart.swift; sourceTree = "<group>"; };
 		D1424B05857A3443B049BD51 /* Pods_dub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -233,6 +235,7 @@
 				84413FEB1C4D040B005AFE2A /* TopController.swift */,
 				84413FE91C4D03F0005AFE2A /* GroupController.swift */,
 				84413FD71C4D03C5005AFE2A /* DubController.swift */,
+				84EDB6511C70AFF3008FFBDA /* LookGroupPart.swift */,
 			);
 			name = tab;
 			sourceTree = "<group>";
@@ -633,6 +636,7 @@
 				8476309F1C493DFF0072A3E3 /* UserInfo.swift in Sources */,
 				84673EFC1C4A63EE00B2D9BF /* Schedulers.swift in Sources */,
 				84413FEA1C4D03F0005AFE2A /* GroupController.swift in Sources */,
+				84EDB6521C70AFF3008FFBDA /* LookGroupPart.swift in Sources */,
 				8476309B1C493DFF0072A3E3 /* API+User.swift in Sources */,
 				8476309A1C493DFF0072A3E3 /* API.swift in Sources */,
 				8476305E1C493D380072A3E3 /* AppDelegate.swift in Sources */,
