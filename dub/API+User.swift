@@ -8,9 +8,10 @@
 
 import Foundation
 import RxSwift
+import Alamofire
 extension API{
-    class func login(mobile mobile:String, password:String) -> Observable<UserInfo>{
+    class func login(mobile mobile:String, password:String) -> Requestable<UserInfo>{
         let param = ["mobile":mobile,"password":password,"devicetoken":"----"]
-        return request(url: "/user/login", method: .POST, param: param)
+        return Requestable(mothod:.POST, url: "/user/login", parameters: param)
     }
 }

@@ -12,4 +12,5 @@ target ‘dub’ do
     pod 'SnapKit', '~> 0.15.0'
     pod 'SDCycleScrollView','~> 1.6' #广告轮播图
     pod 'MJRefresh',:git => 'https://github.com/CoderMJLee/MJRefresh.git' #下拉刷新
+    pod 'MJExtension'
 end

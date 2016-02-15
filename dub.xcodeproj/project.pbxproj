@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02E4E38B1C71889900BB31BC /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E4E38A1C71889900BB31BC /* Requestable.swift */; };
 		0EE4C0B0440D22ACB54EA759 /* Pods_dub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1424B05857A3443B049BD51 /* Pods_dub.framework */; };
 		8409ACD61C605BC300A3E5C8 /* HomeItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409ACD51C605BC300A3E5C8 /* HomeItemViewCell.swift */; };
 		84413FD81C4D03C5005AFE2A /* DubController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84413FD71C4D03C5005AFE2A /* DubController.swift */; };
@@ -23,7 +24,6 @@
 		8476307E1C493D380072A3E3 /* dubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476307D1C493D380072A3E3 /* dubUITests.swift */; };
 		8476309A1C493DFF0072A3E3 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847630941C493DFF0072A3E3 /* API.swift */; };
 		8476309B1C493DFF0072A3E3 /* API+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847630951C493DFF0072A3E3 /* API+User.swift */; };
-		8476309C1C493DFF0072A3E3 /* JsonToObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847630961C493DFF0072A3E3 /* JsonToObject.swift */; };
 		8476309D1C493DFF0072A3E3 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847630971C493DFF0072A3E3 /* RequestError.swift */; };
 		8476309E1C493DFF0072A3E3 /* RxBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847630981C493DFF0072A3E3 /* RxBus.swift */; };
 		8476309F1C493DFF0072A3E3 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847630991C493DFF0072A3E3 /* UserInfo.swift */; };
@@ -48,6 +48,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = BDD1BB95F6E1E910973C1DF81A2FBD12;
 			remoteInfo = SDWebImage;
+		};
+		02E4E3981C71889900BB31BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 846621B01C4A021500305237 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B9203E958810D99D6B2B65A4FE14372A;
+			remoteInfo = MJExtension;
 		};
 		846621BB1C4A021500305237 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -130,6 +137,7 @@
 
 /* Begin PBXFileReference section */
 		028AB02B1C5E04B300E73D4A /* dub-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dub-Bridging-Header.h"; sourceTree = "<group>"; };
+		02E4E38A1C71889900BB31BC /* Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
 		384A207C2F8E9D264F24888B /* Pods-dub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dub/Pods-dub.debug.xcconfig"; sourceTree = "<group>"; };
 		476CC00CCD783870B9DE530D /* Pods-dub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dub.release.xcconfig"; path = "Pods/Target Support Files/Pods-dub/Pods-dub.release.xcconfig"; sourceTree = "<group>"; };
 		8409ACD51C605BC300A3E5C8 /* HomeItemViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeItemViewCell.swift; sourceTree = "<group>"; };
@@ -154,7 +162,6 @@
 		8476307F1C493D380072A3E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		847630941C493DFF0072A3E3 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = dub/API.swift; sourceTree = "<group>"; };
 		847630951C493DFF0072A3E3 /* API+User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "API+User.swift"; path = "dub/API+User.swift"; sourceTree = "<group>"; };
-		847630961C493DFF0072A3E3 /* JsonToObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JsonToObject.swift; path = dub/JsonToObject.swift; sourceTree = "<group>"; };
 		847630971C493DFF0072A3E3 /* RequestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestError.swift; path = dub/RequestError.swift; sourceTree = "<group>"; };
 		847630981C493DFF0072A3E3 /* RxBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RxBus.swift; path = dub/RxBus.swift; sourceTree = "<group>"; };
 		847630991C493DFF0072A3E3 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserInfo.swift; path = dub/UserInfo.swift; sourceTree = "<group>"; };
@@ -215,6 +222,7 @@
 			children = (
 				846621BC1C4A021500305237 /* Alamofire.framework */,
 				846621BE1C4A021500305237 /* Kingfisher.framework */,
+				02E4E3991C71889900BB31BC /* MJExtension.framework */,
 				84E788571C6F047C00D7EE8B /* MJRefresh.framework */,
 				846621C01C4A021500305237 /* Pods_dub.framework */,
 				846621C21C4A021500305237 /* RxBlocking.framework */,
@@ -312,8 +320,8 @@
 				847630A21C493E2E0072A3E3 /* result */,
 				847630941C493DFF0072A3E3 /* API.swift */,
 				847630951C493DFF0072A3E3 /* API+User.swift */,
-				847630961C493DFF0072A3E3 /* JsonToObject.swift */,
 				847630971C493DFF0072A3E3 /* RequestError.swift */,
+				02E4E38A1C71889900BB31BC /* Requestable.swift */,
 			);
 			name = net;
 			sourceTree = "<group>";
@@ -478,6 +486,13 @@
 			remoteRef = 028AB03B1C5E04B300E73D4A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		02E4E3991C71889900BB31BC /* MJExtension.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MJExtension.framework;
+			remoteRef = 02E4E3981C71889900BB31BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		846621BC1C4A021500305237 /* Alamofire.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -624,7 +639,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8476309C1C493DFF0072A3E3 /* JsonToObject.swift in Sources */,
 				847630601C493D380072A3E3 /* LoginController.swift in Sources */,
 				8476309E1C493DFF0072A3E3 /* RxBus.swift in Sources */,
 				84673F0F1C4A681800B2D9BF /* MeController.swift in Sources */,
@@ -636,6 +650,7 @@
 				8476309F1C493DFF0072A3E3 /* UserInfo.swift in Sources */,
 				84673EFC1C4A63EE00B2D9BF /* Schedulers.swift in Sources */,
 				84413FEA1C4D03F0005AFE2A /* GroupController.swift in Sources */,
+				02E4E38B1C71889900BB31BC /* Requestable.swift in Sources */,
 				84EDB6521C70AFF3008FFBDA /* LookGroupPart.swift in Sources */,
 				8476309B1C493DFF0072A3E3 /* API+User.swift in Sources */,
 				8476309A1C493DFF0072A3E3 /* API.swift in Sources */,

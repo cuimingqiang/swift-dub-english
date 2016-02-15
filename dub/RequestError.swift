@@ -9,8 +9,8 @@
 import Foundation
 import RxCocoa
 class RequestError: ErrorType {
-    var msg:String? = nil
-    var status:Int? = 0
+    var msg:String?
+    var status:Int!
     init(msg:String?,status:Int?){
         self.msg = msg
         self.status = status
