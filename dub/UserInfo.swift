@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import SwiftyJSON
 class UserInfo : NSObject{
     var auth_token = ""
     var avatar = ""

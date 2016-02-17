@@ -28,7 +28,17 @@ public class Requestable<Element:NSObject> : ObservableType{
         let request = Alamofire.request(self.mothod,url,parameters: self.parameters,encoding: self.encoding,headers: self.headers)
         return request.responseObject(E).subscribe(observer)
     }
+    /**
+     网络请求
 
+     - parameter mothod:     请求方式
+     - parameter url:        请求路径，不需要host
+     - parameter parameters: 请求参数
+     - parameter encoding:   参数编码类型
+     - parameter headers:    请求头
+
+     - returns: 对象
+     */
     public init(mothod:Alamofire.Method,url:URLStringConvertible,parameters: [String: AnyObject]? = nil,
         encoding: ParameterEncoding = .JSON,
         headers: [String: String]? = nil){

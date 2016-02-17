@@ -26,6 +26,7 @@ class LoginController: UIViewController {
         initContainer()
         initInput()
         initLogin()
+        print(UIScreen.mainScreen().bounds)
     }
     
     override func viewDidAppear(animated: Bool) {

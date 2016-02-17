@@ -9,9 +9,8 @@
 import Foundation
 import RxCocoa
 import RxSwift
-import SwiftyJSON
 
 class API{
-    static var debug = true
+    static let debug = true
     static let server_url = "https://test2.qupeiyin.net"
 }

@@ -12,6 +12,6 @@ import Alamofire
 extension API{
     class func login(mobile mobile:String, password:String) -> Requestable<UserInfo>{
         let param = ["mobile":mobile,"password":password,"devicetoken":"----"]
-        return Requestable(mothod:.POST, url: "/user/login", parameters: param)
+        return Requestable.init(mothod:.POST, url: "/user/login", parameters: param)
     }
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-
+import SDWebImage
 class HomeItemViewCell: UITableViewCell {
     lazy var imgs = [UIImageView.init(),UIImageView.init(),UIImageView.init(),UIImageView.init()]
     lazy var titles = [UILabel.init(),UILabel.init(),UILabel.init(),UILabel.init()]
@@ -17,7 +17,8 @@ class HomeItemViewCell: UITableViewCell {
     func reLayout(){
         for i in 0..<imgs.count{
             let img = imgs[i]
-            img.image = UIImage.init(named: "img_activity_head")
+//            img.image = UIImage.init(named: "img_activity_head")
+            img.sd_setImageWithURL(nil, placeholderImage: UIImage.init(named: "img_activity_head"))
             body.addSubview(img)
             img.snp_makeConstraints {
                 $0.width.equalTo(body).dividedBy(2).offset(-5)
