@@ -7,13 +7,14 @@
 //
 
 import Foundation
-import SwiftyJSON
-class UserInfo {
+class UserInfo : NSObject{
+    var auth_token = ""
+    var avatar = ""
+    var birthday = ""
+    var mobile = Int64.init()
+    var sex = 0
+    var uid = 0
+    var nickname = ""
+
     
-}
-extension UserInfo:JsonToObject{
-    class func toObject(json: JSON?) -> UserInfo? {
-        let info = UserInfo.init()
-        return info
-    }
 }

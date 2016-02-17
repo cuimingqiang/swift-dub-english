@@ -9,6 +9,7 @@
 import UIKit
 import SnapKit
 import RxSwift
+import Alamofire
 class LoginController: UIViewController {
 
     lazy var navigation = UINavigationBar.init()
@@ -25,6 +26,7 @@ class LoginController: UIViewController {
         initContainer()
         initInput()
         initLogin()
+        print(UIScreen.mainScreen().bounds)
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -134,9 +136,9 @@ extension LoginController{
             self.login.backgroundColor = UIColor.greenColor()
             self.login.enabled = false
             self.doLogin()
-//                self.gotoMain()
         }.addDisposableTo(bag)
     }
+
     func doLogin(){
         API.login(mobile: mobile.text!, password: password.text!)
             .subscribeOn(Schedulers.IO())
@@ -146,7 +148,7 @@ extension LoginController{
                 case Event.Completed:
                     self.login.enabled = true
                 case let Event.Next(data):
-                    print(data)
+                    print(data.mj_JSONString())
                     RxBus.postEvent(data)
                     self.gotoMain()
                     return
