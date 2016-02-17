@@ -58,7 +58,7 @@ extension GroupController{
         }
 
     }
-
+ 
     func select(){
         let rect = CGRectMake(CGFloat(segment.selectedSegmentIndex) * container.frame.size.width, 0,
             container.frame.size.width, container.frame.size.height)
@@ -92,6 +92,13 @@ extension GroupController : UIScrollViewDelegate{
 }
 
 extension GroupController{
+    /**
+     <#Description#>
+     
+     - parameter parentView: <#parentView description#>
+     
+     - returns: <#return value description#>
+     */
     func initMyTableView(parentView : UIView){
         myTableView.bounces = true
         myTableView.alwaysBounceVertical = true
